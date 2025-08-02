@@ -5,5 +5,5 @@ finnhub-python
 polygon-api-client
 tweepy
 Flask
-redis
 feedparser>=6.0.10
+redis>=4.6.0
