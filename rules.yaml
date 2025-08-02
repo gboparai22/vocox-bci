@@ -1,0 +1,33 @@
+# rules.yaml — alert definitions for VocoX
+
+news_keywords:
+  earnings:
+    - earnings
+    - EPS
+    - revenue beat
+    - surprise
+  fed:
+    - Fed
+    - interest rate
+    - rate hike
+    - monetary policy
+  cpi:
+    - CPI
+    - inflation
+    - consumer price index
+  merger:
+    - merger
+    - acquisition
+    - takeover
+  rate:
+    - rate path
+    - yields
+    - bond market
+  inflation:
+    - inflation expectations
+    - price pressure
+
+# Price-based rule: mean-reversion on SPY
+mean_revert_spy:
+  lookback_minutes: 30  # window for rolling mean
+  threshold: 0.005      # relative deviation to trigger (0.5%)
